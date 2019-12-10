@@ -6,7 +6,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "expo": "~36.0.0",
@@ -17,8 +19,15 @@
     "react-native-web": "^0.11.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@expo/webpack-config": "^0.10.6",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react": "^5.2.8",
     "@types/react": "~16.9.0",
     "@types/react-native": "~0.60.23",
+    "babel-loader": "^8.0.6",
     "babel-preset-expo": "~8.0.0",
     "cz-conventional-changelog": "3.0.2",
     "typescript": "~3.6.3"
